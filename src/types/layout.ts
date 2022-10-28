@@ -6,6 +6,7 @@ export type LayoutComponent = React.FC<{
   router: NextRouter;
 }>;
 
+// eslint-disable-next-line @typescript-eslint/ban-types
 export type NextPageWithLayout<P = {}, IP = P> = NextComponentType<
   NextPageContext,
   IP,
