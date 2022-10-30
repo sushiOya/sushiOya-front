@@ -1,25 +1,15 @@
-import ImageView from '../components/atoms/ImageView';
+// import ImageView from '../components/atoms/ImageView';
 import { getNavibarLayout } from '../components/templates/NavibarLayout/getNavibarLayout';
 import { NextPageWithLayout } from '../types/layout';
-import Sushi from '/Users/yoongeonung/Code/Toys/omakase-front/src/assets/sushi_test.jpeg';
+// import Sushi from 'src/assets/sushi_test.jpeg';
+import Header from '../components/molecules/Header';
 
 const Page: NextPageWithLayout = () => {
   return (
     <div
-      style={{
-        display: 'flex',
-        overflowX: 'scroll',
-        flexWrap: 'nowrap',
-      }}
+      
     >
-      <ImageView alt={'sushi'} imagePath={Sushi} />
-      <ImageView alt={'sushi'} imagePath={Sushi} />
-      <ImageView alt={'sushi'} imagePath={Sushi} />
-      <ImageView alt={'sushi'} imagePath={Sushi} />
-      <ImageView alt={'sushi'} imagePath={Sushi} />
-      <ImageView alt={'sushi'} imagePath={Sushi} />
-      <ImageView alt={'sushi'} imagePath={Sushi} />
-      <ImageView alt={'sushi'} imagePath={Sushi} />
+      <Header />
     </div>
   );
 };
