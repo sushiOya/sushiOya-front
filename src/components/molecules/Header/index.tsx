@@ -1,12 +1,18 @@
 import HeaderIcons from '../../atoms/HeaderIcons';
 import Logo from '../../atoms/Logo';
+import SearchBar from '../../atoms/SearchBar';
 import { styles } from './index.styles';
 
 const Header = () => {
   return (
     <div css={styles.container}>
-      <Logo />
-      <HeaderIcons />
+      <div css={styles.topContents}>
+        <Logo />
+        <HeaderIcons />
+      </div>
+      <div>
+        <SearchBar css={styles.bottomContents} />
+      </div>
     </div>
   );
 };

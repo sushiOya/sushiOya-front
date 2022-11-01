@@ -3,7 +3,7 @@ import { css } from '@emotion/react';
 export const styles = {
   container: css`
     padding: 12px 16px 0px 16px;
-    background-color: gray;
+    background-color: white;
     min-height: calc(800px - 84px);
     height: 200vh;
   `,

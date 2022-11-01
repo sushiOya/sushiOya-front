@@ -1,10 +1,12 @@
 import { css } from '@emotion/react';
 
 export const styles = {
-  container: css`
-  `,
+  container: css``,
 
   img: css`
     margin-left: 8px;
-  `
+    &:hover {
+      cursor: pointer;
+    }
+  `,
 };
