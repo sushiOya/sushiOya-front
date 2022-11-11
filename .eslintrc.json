@@ -33,9 +33,11 @@
     "jsx-a11y",
     "react",
     "react-hooks",
+    "@emotion",
     "prettier"
   ],
   "rules": {
+    "react/no-unknown-property": ["error", { "ignore": ["css"] }],
     "prettier/prettier": [
       "error",
       {

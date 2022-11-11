@@ -7,10 +7,17 @@ const nextConfig = {
   swcMinify: true,
 };
 
-module.exports = withPlugins([
-  (nextConfig) =>
-    withImages(nextConfig, {
-      poweredByHeader: false,
-    }),
-  (nextConfig) => nextConfig,
-]);
+module.exports = withPlugins(
+  [
+    (nextConfig) =>
+      withImages(nextConfig, {
+        poweredByHeader: false,
+      }),
+    (nextConfig) => nextConfig,
+  ],
+  {
+    images: {
+      disableStaticImages: true,
+    },
+  }
+);
