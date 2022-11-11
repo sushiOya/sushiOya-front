@@ -3,27 +3,30 @@ import { styles } from './index.styles';
 
 type Props = {
   alt: string;
-  imagePath: string;
+  imagePath?: string;
   width?: number;
   height?: number;
+  marked?: boolean;
 };
 
 const ImageView = ({
-  imagePath,
+  imagePath = '',
   alt,
   width = 140,
   height = 168,
 }: Props): JSX.Element => {
   return (
-    <div css={styles.container}>
-      <Image
-        src={imagePath}
-        alt={alt}
-        layout={'fixed'}
-        width={width}
-        height={height}
-      />
-    </div>
+    <>
+      <div css={styles.container}>
+        <Image
+          src={imagePath}
+          alt={alt}
+          layout={'fixed'}
+          width={width}
+          height={height}
+        />
+      </div>
+    </>
   );
 };
 

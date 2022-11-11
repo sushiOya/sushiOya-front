@@ -1,9 +1,17 @@
+import { useState } from 'react';
+import Sushi from '../assets/sushi_test.jpeg';
 import ImageView from '../components/atoms/ImageView';
+import BookMarkImageView from '../components/molecules/BookmarkImageView';
 import { getNavibarLayout } from '../components/templates/NavibarLayout/getNavibarLayout';
 import { NextPageWithLayout } from '../types/layout';
-import Sushi from '/Users/yoongeonung/Code/Toys/omakase-front/src/assets/sushi_test.jpeg';
 
 const Page: NextPageWithLayout = () => {
+  const [marked, setMarked] = useState(false);
+
+  const onBookmarkClicked = () => {
+    setMarked((prev) => !prev);
+  };
+
   return (
     <div
       style={{
@@ -12,13 +20,12 @@ const Page: NextPageWithLayout = () => {
         flexWrap: 'nowrap',
       }}
     >
-      <ImageView alt={'sushi'} imagePath={Sushi} />
-      <ImageView alt={'sushi'} imagePath={Sushi} />
-      <ImageView alt={'sushi'} imagePath={Sushi} />
-      <ImageView alt={'sushi'} imagePath={Sushi} />
-      <ImageView alt={'sushi'} imagePath={Sushi} />
-      <ImageView alt={'sushi'} imagePath={Sushi} />
-      <ImageView alt={'sushi'} imagePath={Sushi} />
+      <BookMarkImageView
+        marked={marked}
+        onBookmarkClicked={onBookmarkClicked}
+        alt={'sushi'}
+        imagePath={Sushi}
+      />
       <ImageView alt={'sushi'} imagePath={Sushi} />
     </div>
   );
