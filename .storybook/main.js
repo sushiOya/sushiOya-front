@@ -10,5 +10,18 @@ module.exports = {
   "framework": "@storybook/react",
   "core": {
     "builder": "@storybook/builder-webpack5"
+  },
+  "babel": {
+    presets: [
+      [
+        'next/babel',
+        {
+          'preset-react': {
+            runtime: 'automatic',
+            importSource: '@emotion/react',
+          },
+        },
+      ],
+    ],
   }
 }
