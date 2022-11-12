@@ -12,7 +12,8 @@
     "format": "prettier --write --loglevel=warn 'src/**/*.{js,jsx,ts,tsx,html,json,gql,graphql}'",
     "fix": "npm run--silentformat; npm run --silentlint:fix",
     "sb": "build-storybook; start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=9ff1aa242869"
   },
   "dependencies": {
     "@emotion/babel-preset-css-prop": "^11.10.0",
@@ -46,6 +47,7 @@
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
     "babel-loader": "^8.3.0",
+    "chromatic": "^6.11.4",
     "eslint": "^8.25.0",
     "eslint-config-next": "12.3.1",
     "eslint-config-prettier": "^8.5.0",
@@ -64,5 +66,7 @@
   },
   "eslintIgnore": [
     "next.config.js"
-  ]
+  ],
+  "readme": "ERROR: No README data found!",
+  "_id": "tp@0.1.0"
 }
