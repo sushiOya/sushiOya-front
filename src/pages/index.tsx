@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Sushi from '../assets/sushi_test.jpeg';
-import Header from '../components/molecules/Header';
+import ImageView from '../components/atoms/ImageView';
 import Text, { FONT_WEIGHT, TEXT } from '../components/atoms/Text';
 import Title, { TITLE } from '../components/atoms/Title';
 import BookMarkImageView from '../components/molecules/BookmarkImageView';
