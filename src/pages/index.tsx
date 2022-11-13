@@ -6,6 +6,7 @@ import Title, { TITLE } from '../components/atoms/Title';
 import BookMarkImageView from '../components/molecules/BookmarkImageView';
 import { getNavibarLayout } from '../components/templates/NavibarLayout/getNavibarLayout';
 import { NextPageWithLayout } from '../types/layout';
+import Header from '../components/molecules/Header';
 
 const Page: NextPageWithLayout = () => {
   const [marked, setMarked] = useState(false);
@@ -15,6 +16,8 @@ const Page: NextPageWithLayout = () => {
   };
 
   return (
+    <>
+      <Header />
     <div
       style={{
         display: 'flex',
@@ -36,6 +39,7 @@ const Page: NextPageWithLayout = () => {
       </div>
       <ImageView alt={'sushi'} imagePath={Sushi} />
     </div>
+    </>
   );
 };
 
