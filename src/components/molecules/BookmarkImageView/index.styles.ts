@@ -3,6 +3,8 @@ import { css, SerializedStyles } from '@emotion/react';
 export const styles = {
   container: css`
     position: relative;
+    width: 140px;
+    height: 168px;
   `,
 
   btn: css`

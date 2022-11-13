@@ -27,6 +27,7 @@ const BookMarkImageView = ({
             layout={'fixed'}
             width={12}
             height={12}
+            unoptimized
           />
         </button>
       </div>
