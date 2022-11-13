@@ -12,8 +12,7 @@
     "format": "prettier --write --loglevel=warn 'src/**/*.{js,jsx,ts,tsx,html,json,gql,graphql}'",
     "fix": "npm run--silentformat; npm run --silentlint:fix",
     "sb": "build-storybook; start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=9ff1aa242869"
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@emotion/babel-preset-css-prop": "^11.10.0",
