@@ -4,13 +4,13 @@ import Text, { FONT_WEIGHT, TEXT } from '../../atoms/Text';
 import Title, { TITLE } from '../../atoms/Title';
 import Card from './index';
 
-type Stroy = ComponentStoryObj<typeof Card>;
+type Story = ComponentStoryObj<typeof Card>;
 
 export default {
   component: Card,
 } as ComponentMeta<typeof Card>;
 
-export const Default: Stroy = {
+export const Default: Story = {
   args: {
     children: (
       <>

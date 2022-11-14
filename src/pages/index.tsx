@@ -5,9 +5,9 @@ import Text, { FONT_WEIGHT, TEXT } from '../components/atoms/Text';
 import Title, { TITLE } from '../components/atoms/Title';
 import BookMarkImageView from '../components/molecules/BookmarkImageView';
 import Card from '../components/molecules/Card';
+import Header from '../components/molecules/Header';
 import { getNavibarLayout } from '../components/templates/NavibarLayout/getNavibarLayout';
 import { NextPageWithLayout } from '../types/layout';
-import Header from '../components/molecules/Header';
 
 const Page: NextPageWithLayout = () => {
   const [marked, setMarked] = useState(false);
@@ -19,58 +19,70 @@ const Page: NextPageWithLayout = () => {
   return (
     <>
       <Header />
-    <div
-      style={{
-        display: 'flex',
-        overflowX: 'scroll',
-        flexWrap: 'nowrap',
-        gap: '5px',
-      }}
-    >
-      <Card>
-        <BookMarkImageView
-          marked={marked}
-          onBookmarkClicked={onBookmarkClicked}
-          alt={'sushi'}
-          imagePath={Sushi}
-        />
-        <Title as={TITLE.H4}>업장 이름</Title>
-        <Text as={TEXT.BODY1} styleProps={{ fontWeight: FONT_WEIGHT.REGULAR }}>
-          서울시
-        </Text>
-      </Card>
-      <Card>
-        <BookMarkImageView
-          marked={marked}
-          onBookmarkClicked={onBookmarkClicked}
-          alt={'sushi'}
-          imagePath={Sushi}
-        />
-        <Title as={TITLE.H4}>업장 이름</Title>
-        <Text as={TEXT.BODY1} styleProps={{ fontWeight: FONT_WEIGHT.REGULAR }}>
-          서울시
-        </Text>
-      </Card>
-      <Card>
-        <BookMarkImageView
-          marked={marked}
-          onBookmarkClicked={onBookmarkClicked}
-          alt={'sushi'}
-          imagePath={Sushi}
-        />
-        <Title as={TITLE.H4}>업장 이름</Title>
-        <Text as={TEXT.BODY1} styleProps={{ fontWeight: FONT_WEIGHT.REGULAR }}>
-          서울시
-        </Text>
-      </Card>
-      <Card>
-        <ImageView alt={'sushi'} imagePath={Sushi} />
-        <Title as={TITLE.H4}>업장 이름</Title>
-        <Text as={TEXT.BODY1} styleProps={{ fontWeight: FONT_WEIGHT.REGULAR }}>
-          서울시
-        </Text>
-      </Card>
-    </div>
+      <div
+        style={{
+          display: 'flex',
+          overflowX: 'scroll',
+          flexWrap: 'nowrap',
+          gap: '5px',
+        }}
+      >
+        <Card>
+          <BookMarkImageView
+            marked={marked}
+            onBookmarkClicked={onBookmarkClicked}
+            alt={'sushi'}
+            imagePath={Sushi}
+          />
+          <Title as={TITLE.H4}>업장 이름</Title>
+          <Text
+            as={TEXT.BODY1}
+            styleProps={{ fontWeight: FONT_WEIGHT.REGULAR }}
+          >
+            서울시
+          </Text>
+        </Card>
+        <Card>
+          <BookMarkImageView
+            marked={marked}
+            onBookmarkClicked={onBookmarkClicked}
+            alt={'sushi'}
+            imagePath={Sushi}
+          />
+          <Title as={TITLE.H4}>업장 이름</Title>
+          <Text
+            as={TEXT.BODY1}
+            styleProps={{ fontWeight: FONT_WEIGHT.REGULAR }}
+          >
+            서울시
+          </Text>
+        </Card>
+        <Card>
+          <BookMarkImageView
+            marked={marked}
+            onBookmarkClicked={onBookmarkClicked}
+            alt={'sushi'}
+            imagePath={Sushi}
+          />
+          <Title as={TITLE.H4}>업장 이름</Title>
+          <Text
+            as={TEXT.BODY1}
+            styleProps={{ fontWeight: FONT_WEIGHT.REGULAR }}
+          >
+            서울시
+          </Text>
+        </Card>
+        <Card>
+          <ImageView alt={'sushi'} imagePath={Sushi} />
+          <Title as={TITLE.H4}>업장 이름</Title>
+          <Text
+            as={TEXT.BODY1}
+            styleProps={{ fontWeight: FONT_WEIGHT.REGULAR }}
+          >
+            서울시
+          </Text>
+        </Card>
+      </div>
     </>
   );
 };
