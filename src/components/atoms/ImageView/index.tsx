@@ -24,6 +24,7 @@ const ImageView = ({
           layout={'fixed'}
           width={width}
           height={height}
+          unoptimized
         />
       </div>
     </>

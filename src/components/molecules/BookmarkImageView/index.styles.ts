@@ -1,8 +1,10 @@
-import { css } from '@emotion/react';
+import { css, SerializedStyles } from '@emotion/react';
 
 export const styles = {
   container: css`
     position: relative;
+    width: 140px;
+    height: 168px;
   `,
 
   btn: css`
@@ -16,7 +18,7 @@ export const styles = {
     justify-content: center;
   `,
 
-  bookmark: css`
+  bookmark: (marked: boolean): SerializedStyles => css`
     position: absolute;
     margin: 8px 8px;
     width: 22px;
@@ -27,6 +29,6 @@ export const styles = {
     align-items: center;
     right: 0;
     z-index: 10;
-    background: rgba(255, 255, 255, 0.5);
+    background: ${marked ? `rgba(255, 255, 255, 0.5)` : `white`};
   `,
 };

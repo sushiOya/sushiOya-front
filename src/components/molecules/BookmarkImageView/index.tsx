@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import BookMarkFilled from '../../../assets/icons/bookmark_filled.svg';
-import BookMarkNotFill from '../../../assets/icons/bookmark_not_fill.svg';
+import BookMarkNotFill from '../../../assets/icons/bookmark_filled.svg';
+import BookMarkFilled from '../../../assets/icons/bookmark_not_fill.svg';
 import ImageView from '../../atoms/ImageView';
 import { styles } from './index.styles';
 
@@ -19,7 +19,7 @@ const BookMarkImageView = ({
 }: Props): JSX.Element => {
   return (
     <div css={styles.container}>
-      <div css={styles.bookmark}>
+      <div css={styles.bookmark(marked)}>
         <button css={styles.btn} onClick={onBookmarkClicked}>
           <Image
             src={marked ? BookMarkNotFill : BookMarkFilled}
@@ -27,6 +27,7 @@ const BookMarkImageView = ({
             layout={'fixed'}
             width={12}
             height={12}
+            unoptimized
           />
         </button>
       </div>
