@@ -1,5 +1,5 @@
-import BellIcon from 'src/assets/icons/bell.svg';
-import BookmarkIcon from 'src/assets/icons/bookmark.svg';
+import BellIcon from '../../../assets/icons/bell.svg';
+import BookmarkIcon from '../../../assets/icons/bookmark.svg';
 import { styles } from './index.styles';
 
 const HeaderIcons = () => {
