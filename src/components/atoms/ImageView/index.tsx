@@ -18,14 +18,18 @@ const ImageView = ({
   return (
     <>
       <div css={styles.container}>
-        <Image
-          src={imagePath}
-          alt={alt}
-          layout={'fixed'}
-          width={width}
-          height={height}
-          unoptimized
-        />
+        {imagePath ? (
+          <Image
+            src={imagePath}
+            alt={alt}
+            layout={'fixed'}
+            width={width}
+            height={height}
+            unoptimized
+          />
+        ) : (
+          <div css={styles.logoWrapper} />
+        )}
       </div>
     </>
   );
