@@ -12,8 +12,8 @@ type Props = {
 
 export const NavibarLayout: React.FC<Props> = (props) => {
   return (
-    <div css={styles.container}>
-      {props.children}
+    <div css={styles.containerWrapper}>
+      <div css={styles.container}>{props.children}</div>
       <div css={styles.navibar}>
         <div css={styles.iconWrapper}>
           <img css={styles.homeIcon} src={HomeIcon} alt={'home'} />

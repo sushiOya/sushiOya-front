@@ -1,12 +1,21 @@
 import { css } from '@emotion/react';
 
 export const styles = {
-  container: css`
+  containerWrapper: css`
+    background-color: #0070f3;
     padding: 12px 16px 0px 16px;
-    background-color: gray;
-    min-height: calc(800px - 84px);
-    height: 200vh;
+    height: 800px;
+    width: 480px;
+    position: relative;
   `,
+
+  container: css`
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+  `,
+
+  children: css``,
 
   iconWrapper: css`
     &:hover {
@@ -30,12 +39,12 @@ export const styles = {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 480px;
     width: 100%;
-    position: fixed;
+    position: absolute;
     background-color: #f8f9fc;
-    left: 0;
-    bottom: 0;
     height: 84px;
+    bottom: 0;
   `,
 
   homeIcon: css``,
