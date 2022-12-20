@@ -1,7 +1,7 @@
 import HeaderIcons from '../../atoms/HeaderIcons';
 import Logo from '../../atoms/Logo';
-import { styles } from './index.styles';
 import SearchBar from '../../atoms/SearchBar';
+import { styles } from './index.styles';
 
 const Header = () => {
   return (
