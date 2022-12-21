@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Sushi from '../assets/sushi_test.jpeg';
 import ImageView from '../components/atoms/ImageView';
+import MainBanner from '../components/atoms/MainBanner';
 import StarRating from '../components/atoms/StarRating';
 import Text, { FONT_WEIGHT, TEXT } from '../components/atoms/Text';
 import Title, { TITLE } from '../components/atoms/Title';
@@ -20,6 +21,7 @@ const Page: NextPageWithLayout = () => {
   return (
     <>
       <Header />
+      <MainBanner />
       <div
         style={{
           display: 'flex',
