@@ -4,7 +4,7 @@ export const styles = {
   containerWrapper: css`
     background-color: #0070f3;
     height: 800px;
-    max-width: 480px;
+    max-width: 360px;
     margin: 0 auto;
     position: relative;
   `,
