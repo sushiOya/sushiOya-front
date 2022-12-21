@@ -9,6 +9,7 @@ export const styles = {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 17px;
+    padding: 16px;
   `,
   bottomContents: css``,
 };

@@ -3,9 +3,9 @@ import { css } from '@emotion/react';
 export const styles = {
   containerWrapper: css`
     background-color: #0070f3;
-    padding: 12px 16px 0px 16px;
     height: 800px;
-    width: 480px;
+    max-width: 480px;
+    margin: 0 auto;
     position: relative;
   `,
 
