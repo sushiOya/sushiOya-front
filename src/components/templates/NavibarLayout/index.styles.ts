@@ -2,10 +2,10 @@ import { css } from '@emotion/react';
 
 export const styles = {
   containerWrapper: css`
-    background-color: #0070f3;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     height: 800px;
     max-width: 360px;
-    margin: 0 auto;
+    margin: 200px auto;
     position: relative;
   `,
 
