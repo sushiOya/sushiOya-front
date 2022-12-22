@@ -8,7 +8,7 @@ export const styles = {
   `,
   h2: css`
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 140%;
   `,
   h3: css`
