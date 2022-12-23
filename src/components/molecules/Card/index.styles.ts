@@ -8,5 +8,6 @@ export const styles = {
     gap: 4px;
     width: 140px;
     height: 223px;
+    margin-right: 12px;
   `,
 };
