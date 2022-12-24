@@ -7,22 +7,17 @@ export const styles = {
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    border-radius: 6px;
-    //background-color: #f8f9fc;
     background-color: white;
-    margin-bottom: 20px;
+    margin: -3px 4% 24px 4%;
+    border-bottom: #111111 solid thin;
   `,
   searchBar: css`
     width: 100%;
     height: 20px;
-    text-align: left;
-    background-color: transparent;
-    margin-left: 4%;
     border: 0;
-    color: black;
+    margin-top: 2px;
   `,
   img: css`
-    margin-left: 8px;
-    margin-right: 4.5%;
+    margin: 2px 2.5% 2px 0;
   `,
 };
