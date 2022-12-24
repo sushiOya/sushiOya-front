@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import NoImage from '../../../assets/images/no_image.svg';
 import { styles } from './index.styles';
 
 type Props = {
@@ -10,7 +11,7 @@ type Props = {
 };
 
 const ImageView = ({
-  imagePath = '',
+  imagePath = NoImage,
   alt,
   width = 140,
   height = 168,

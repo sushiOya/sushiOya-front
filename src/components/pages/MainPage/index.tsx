@@ -1,4 +1,3 @@
-import Sushi from '../../../assets/sushi_test.jpeg';
 import ImageView from '../../atoms/ImageView';
 import MainBanner from '../../atoms/MainBanner';
 import StarRating from '../../atoms/StarRating';
@@ -31,7 +30,6 @@ const MainPage = () => {
               marked={false}
               onBookmarkClicked={() => {}}
               alt={'sushi'}
-              imagePath={Sushi}
             />
             <Title as={TITLE.H4}>업장 이름</Title>
             <Text
@@ -46,7 +44,6 @@ const MainPage = () => {
               marked={false}
               onBookmarkClicked={() => {}}
               alt={'sushi'}
-              imagePath={Sushi}
             />
             <Title as={TITLE.H4}>업장 이름</Title>
             <Text
@@ -61,7 +58,6 @@ const MainPage = () => {
               marked={true}
               onBookmarkClicked={() => {}}
               alt={'sushi'}
-              imagePath={Sushi}
             />
             <Title as={TITLE.H4}>업장 이름</Title>
             <Text
@@ -72,7 +68,7 @@ const MainPage = () => {
             </Text>
           </Card>
           <Card>
-            <ImageView alt={'sushi'} imagePath={Sushi} />
+            <ImageView alt={'sushi'} />
             <Title as={TITLE.H4}>업장 이름</Title>
             <Text
               as={TEXT.BODY1}
@@ -100,7 +96,6 @@ const MainPage = () => {
               marked={false}
               onBookmarkClicked={() => {}}
               alt={'sushi'}
-              imagePath={Sushi}
             />
             <Title as={TITLE.H4}>업장 이름</Title>
             <Text
@@ -115,7 +110,6 @@ const MainPage = () => {
               marked={false}
               onBookmarkClicked={() => {}}
               alt={'sushi'}
-              imagePath={Sushi}
             />
             <Title as={TITLE.H4}>업장 이름</Title>
             <Text
@@ -130,7 +124,6 @@ const MainPage = () => {
               marked={true}
               onBookmarkClicked={() => {}}
               alt={'sushi'}
-              imagePath={Sushi}
             />
             <Title as={TITLE.H4}>업장 이름</Title>
             <Text
@@ -141,7 +134,7 @@ const MainPage = () => {
             </Text>
           </Card>
           <Card>
-            <ImageView alt={'sushi'} imagePath={Sushi} />
+            <ImageView alt={'sushi'} />
             <Title as={TITLE.H4}>업장 이름</Title>
             <Text
               as={TEXT.BODY1}
@@ -169,7 +162,6 @@ const MainPage = () => {
               marked={false}
               onBookmarkClicked={() => {}}
               alt={'sushi'}
-              imagePath={Sushi}
             />
             <Title as={TITLE.H4}>업장 이름</Title>
             <Text
@@ -184,7 +176,6 @@ const MainPage = () => {
               marked={false}
               onBookmarkClicked={() => {}}
               alt={'sushi'}
-              imagePath={Sushi}
             />
             <Title as={TITLE.H4}>업장 이름</Title>
             <Text
@@ -199,7 +190,6 @@ const MainPage = () => {
               marked={true}
               onBookmarkClicked={() => {}}
               alt={'sushi'}
-              imagePath={Sushi}
             />
             <Title as={TITLE.H4}>업장 이름</Title>
             <Text
@@ -210,7 +200,7 @@ const MainPage = () => {
             </Text>
           </Card>
           <Card>
-            <ImageView alt={'sushi'} imagePath={Sushi} />
+            <ImageView alt={'sushi'} />
             <Title as={TITLE.H4}>업장 이름</Title>
             <Text
               as={TEXT.BODY1}
@@ -238,7 +228,6 @@ const MainPage = () => {
               marked={false}
               onBookmarkClicked={() => {}}
               alt={'sushi'}
-              imagePath={Sushi}
             />
             <Title as={TITLE.H4}>업장 이름</Title>
             <Text
@@ -253,7 +242,6 @@ const MainPage = () => {
               marked={false}
               onBookmarkClicked={() => {}}
               alt={'sushi'}
-              imagePath={Sushi}
             />
             <Title as={TITLE.H4}>업장 이름</Title>
             <Text
@@ -268,7 +256,6 @@ const MainPage = () => {
               marked={true}
               onBookmarkClicked={() => {}}
               alt={'sushi'}
-              imagePath={Sushi}
             />
             <Title as={TITLE.H4}>업장 이름</Title>
             <Text
@@ -279,7 +266,7 @@ const MainPage = () => {
             </Text>
           </Card>
           <Card>
-            <ImageView alt={'sushi'} imagePath={Sushi} />
+            <ImageView alt={'sushi'} />
             <Title as={TITLE.H4}>업장 이름</Title>
             <Text
               as={TEXT.BODY1}
