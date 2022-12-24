@@ -6,7 +6,7 @@ import { styles } from './index.styles';
 
 type Props = {
   alt: string;
-  imagePath: string;
+  imagePath?: string;
   marked: boolean;
   onBookmarkClicked: () => void;
 };
