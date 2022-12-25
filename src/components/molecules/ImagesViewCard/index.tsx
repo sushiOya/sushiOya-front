@@ -1,6 +1,6 @@
+import { Restaurant } from '../../../pages';
 import Text, { FONT_WEIGHT, TEXT } from '../../atoms/Text';
 import Title, { TITLE } from '../../atoms/Title';
-import { Restaurant } from '../../pages/MainPage';
 import BookMarkImageView from '../BookmarkImageView';
 import Card from '../Card';
 
@@ -15,7 +15,9 @@ const ImageViewCard = ({
     <Card>
       <BookMarkImageView
         marked={false}
-        onBookmarkClicked={() => {}}
+        onBookmarkClicked={(): void => {
+          /* noop */
+        }}
         alt={'sushi'}
         imagePath={imagePath}
       />

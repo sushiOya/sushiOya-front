@@ -1,5 +1,5 @@
+import { Restaurant } from '../../../pages';
 import Title, { TITLE } from '../../atoms/Title';
-import { Restaurant } from '../../pages/MainPage';
 import ImageViewCard from '../ImagesViewCard';
 import { styles } from './index.styles';
 
