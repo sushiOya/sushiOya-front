@@ -2,7 +2,6 @@ import { css } from '@emotion/react';
 
 export const styles = {
   container: css`
-    //background: coral;
     margin-top: 37px;
     margin-left: 6px;
     margin-right: 6px;
