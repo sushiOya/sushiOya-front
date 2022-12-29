@@ -1,5 +1,20 @@
+import ReviewListCard from '../../molecules/ReviewListCard';
+
 const RestaurantReviewListPage = () => {
-  return <div>Restaurant Review</div>;
+  return (
+    <div>
+      <ReviewListCard />
+      <ReviewListCard />
+      <ReviewListCard />
+      <ReviewListCard />
+      <ReviewListCard />
+      <ReviewListCard />
+      <ReviewListCard />
+      <ReviewListCard />
+      <ReviewListCard />
+      <ReviewListCard />
+    </div>
+  );
 };
 
 export default RestaurantReviewListPage;

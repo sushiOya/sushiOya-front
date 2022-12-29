@@ -12,9 +12,9 @@ export const styles = {
 
   container: css`
     width: 100%;
-    height: 100%;
+    margin-top: 56px;
+    height: calc(100% - 56px);
     overflow-y: scroll;
-    background-color: #646464;
   `,
 
   topNavibar: css`
@@ -32,5 +32,12 @@ export const styles = {
   iconWrapper: css`
     box-sizing: border-box;
     margin: 16px 0 16px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      margin-left: 8px;
+    }
   `,
 };
