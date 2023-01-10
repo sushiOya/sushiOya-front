@@ -1,4 +1,6 @@
 import { Restaurant } from '../../../pages';
+import FilteringBox from '../../atoms/FilteringBox';
+import HorizontalDivider from '../../atoms/HorizontalDivider';
 import MainBanner from '../../atoms/MainBanner';
 import Header from '../../molecules/Header';
 import HorizontalListView from '../../molecules/HorizontalListView';
@@ -13,6 +15,8 @@ const MainPage = ({ restaurants }: Props): JSX.Element => {
     <>
       <Header />
       <MainBanner />
+      <FilteringBox />
+      <HorizontalDivider />
       <div css={styles.container}>
         <HorizontalListView
           title={'최근 올라온 오마카세'}
