@@ -28,7 +28,12 @@ export const NavibarLayout: React.FC<Props> = (props) => {
           <h2>커뮤니티</h2>
         </div>
         <div css={styles.iconWrapper}>
-          <img css={styles.homeIcon} src={MyPage} alt={'mypage'} />
+          <img
+            css={styles.homeIcon}
+            src={MyPage}
+            alt={'mypage'}
+            onClick={() => console.log('D')}
+          />
           <h2>마이페이지</h2>
         </div>
       </div>
