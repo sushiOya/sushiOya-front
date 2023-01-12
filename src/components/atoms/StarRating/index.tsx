@@ -6,8 +6,8 @@ import { styles } from './index.styles';
 type Props = {
   score?: number;
   inReviewPage: boolean;
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
 };
 
 const StarRating = ({

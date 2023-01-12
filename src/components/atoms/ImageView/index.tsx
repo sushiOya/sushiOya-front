@@ -18,7 +18,7 @@ const ImageView = ({
 }: Props): JSX.Element => {
   return (
     <>
-      <div css={styles.container}>
+      <div css={styles.container({ width, height })}>
         {imagePath ? (
           <Image
             src={imagePath}

@@ -1,12 +1,12 @@
 import { css } from '@emotion/react';
 
 export const styles = {
-  container: css`
+  container: (props: { width: number; height: number }) => css`
     position: relative;
     background-color: #f1f3f9;
     border-radius: 12px;
-    width: 140px;
-    height: 168px;
+    width: ${props ? `${props.width}px` : '140px'};
+    height: ${props ? `${props.height}px` : '168px'};
     display: flex;
     justify-content: center;
     align-items: center;
